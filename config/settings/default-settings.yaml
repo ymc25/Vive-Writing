@@ -1,0 +1,46 @@
+# Vive-Writing デフォルト設定
+
+# 記事生成設定
+article:
+  default_word_count: 2000
+  default_language: "ja"
+  default_format: "markdown"
+
+# トーン設定
+tone:
+  default: "professional-friendly"  # professional-friendly, casual, formal
+  options:
+    - professional-friendly
+    - casual
+    - formal
+    - technical
+    - conversational
+
+# Claude API設定
+claude:
+  model: "claude-3-5-sonnet-20241022"  # 使用するモデル
+  max_tokens: 4096
+  temperature: 0.7
+
+# 音声認識設定
+transcription:
+  service: "whisper"  # whisper, google, azure
+  language: "ja"
+
+# ファイル命名規則
+naming:
+  date_format: "%Y-%m-%d"
+  use_timestamp: true
+
+# ワークフロー設定
+workflow:
+  auto_transcribe: false  # 自動文字起こし
+  auto_generate: false    # 自動記事生成
+  require_review: true    # レビュー必須
+
+# 品質チェック
+quality:
+  min_word_count: 500
+  max_word_count: 10000
+  check_spelling: true
+  check_grammar: false  # 文法チェック（将来実装）
