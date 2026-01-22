@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ログ
+*.log
+logs/
+
+# 音声ファイル（大きいファイルは除外）
+input/audio/*.wav
+input/audio/*.mp3
+input/audio/*.m4a
+input/audio/*.flac
+
+# 一時ファイル
+*.tmp
+*.temp
+.cache/
+
+# APIキー・認証情報
+config/settings/credentials.yaml
+config/settings/secrets.yaml
+*.key
+*.pem
+
+# 出力ファイル（必要に応じて調整）
+# output/drafts/*.md
+# output/published/*.md
