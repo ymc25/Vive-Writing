@@ -36,6 +36,5 @@ jobs:
             WebFetch
             Bash:curl
             Bash:wget
-          additional_permissions: |
-            actions: read
-          claude_args: '--allowed-tools "Bash(gh pr:*)" "Bash(gh issue:*)"'
+            Bash:gh pr*
+            Bash:gh issue*
